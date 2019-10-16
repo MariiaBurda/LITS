@@ -1,15 +1,16 @@
 # check if parenthesis are balanced
 # str = '((((((((((((((2, 3)))))))))))))'
 # solution from https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-python/
+# this solution for more complicated cases
 
 open_list = ["[", "{", "("]
 close_list = ["]", "}", ")"]
 
 
 # Function to check parentheses
-def check(myStr):
+def check_if_parenthesis_are_balanced(input_str):
     stack = []
-    for i in myStr:
+    for i in input_str:
         if i in open_list:
             stack.append(i)
         elif i in close_list:
@@ -27,14 +28,9 @@ def check(myStr):
         return "Unbalanced"
 
 
-# Driver code
-#string = "{[]{()}}"
-#print(string, "-", check(string))
+input_string = "((((((((((((((2, 3)))))))))))))"
+print(input_string, "-", check_if_parenthesis_are_balanced(input_string))
 
-#string = "[{}{})(]"
-#print(string, "-", check(string))
-
-string = "((((((((((((((2, 3)))))))))))))"
-print(string, "-", check(string))
-
-
+# more complicated cases
+# input_string = "{[]{()}}"
+# input_string = "[{}{})(]"

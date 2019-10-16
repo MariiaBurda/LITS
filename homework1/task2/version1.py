@@ -1,4 +1,5 @@
 # check if parenthesis are balanced
+# my solution using functions
 
 
 def check_if_parenthesis_are_balanced(input_str):
