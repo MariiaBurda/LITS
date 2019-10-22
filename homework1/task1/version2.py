@@ -12,7 +12,7 @@ def flatten_array(input_lst):
     result_lst = input_lst[:]
     index = 0
     while index < len(result_lst):
-        if type(result_lst[index]) != list:
+        if not isinstance(result_lst[index], list):
             index += 1
             continue
         result_lst = result_lst[0:index] + result_lst[index] + result_lst[index + 1:]
