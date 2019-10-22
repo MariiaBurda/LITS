@@ -13,7 +13,7 @@ output_list = []
 
 def remove_nestings(input_lst):
     for i in input_lst:
-        if type(i) == list:
+        if isinstance(i, list):
             remove_nestings(i)
         else:
             output_list.append(i)
