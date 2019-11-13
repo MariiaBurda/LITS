@@ -1,12 +1,12 @@
 def count_holes(input_num):
     try:
+        input_num = int(input_num)
         input_num = str(input_num).lstrip('0').lstrip('-')
-        list_of_numbers = [int(x) for x in str(input_num)]
         sum_of_numbers = 0
-        dict_of_numbers = {0: 1, 1: 0, 2: 0, 3: 0, 4: 1, 5: 0, 6: 1, 7: 0, 8: 2, 9: 1}
+        dict_of_numbers = {'0': 1, '4': 1, '6': 1, '8': 2, '9': 1}
 
-        for i in list_of_numbers:
-            sum_of_numbers += dict_of_numbers[i]
+        for i in input_num:
+            sum_of_numbers += dict_of_numbers.get(i, 0)
 
         print(sum_of_numbers)
 

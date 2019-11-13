@@ -5,9 +5,9 @@
 
 open_list = ["[", "{", "("]
 close_list = ["]", "}", ")"]
+# input_string = "[{}{})(]"
 
 
-# Function to check parentheses
 def check_if_parenthesis_are_balanced(input_str):
     stack = []
     for i in input_str:
@@ -31,6 +31,11 @@ def check_if_parenthesis_are_balanced(input_str):
 input_string = "((((((((((((((2, 3)))))))))))))"
 print(input_string, "-", check_if_parenthesis_are_balanced(input_string))
 
-# more complicated cases
-# input_string = "{[]{()}}"
-# input_string = "[{}{})(]"
+input_string = "{[]{()}}"
+print(input_string, "-", check_if_parenthesis_are_balanced(input_string))
+
+input_string = "[{}{})(]"
+print(input_string, "-", check_if_parenthesis_are_balanced(input_string))
+
+input_string = "[{}]{}[]"
+print(input_string, "-", check_if_parenthesis_are_balanced(input_string))

@@ -1,11 +1,12 @@
+import re
+
+
 def find_most_frequent(text):
-    modify_text = text.replace(",", " ").replace(".", " ").replace("?", " ")\
-        .replace("!", " ").replace(":", " ").replace("-", " ").replace("\n", " ")
-    modify_text = modify_text.lower()
-    words_list = modify_text.split()
+    modify_text = text.lower()
+    list_of_input_words = re.findall(r'\w+', modify_text)
     words_dict = {}
 
-    for word in words_list:
+    for word in list_of_input_words:
         if word in words_dict:
             words_dict[word] += 1
         else:
