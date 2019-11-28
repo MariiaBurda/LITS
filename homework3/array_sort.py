@@ -35,11 +35,3 @@ def reversed_array(array):
 
 sorted_list = bubble_sort([8, 2, 1, 7, -1, 0.5])
 reversed_array(sorted_list)
-
-
-
-
-
-
-
-
