@@ -1,7 +1,3 @@
-# check if parenthesis are balanced
-# my solution using functions
-
-
 def check_if_parenthesis_are_balanced(input_str):
     count_open_signs = 0
     count_close_signs = 0
@@ -26,6 +22,3 @@ def check_if_parenthesis_are_balanced(input_str):
 check_if_parenthesis_are_balanced('((2, 3))')
 check_if_parenthesis_are_balanced(')))1+1(((')
 check_if_parenthesis_are_balanced('ps')
-
-
-

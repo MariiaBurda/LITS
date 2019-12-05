@@ -28,6 +28,3 @@ sorted_array = bubble_sort([8, 2, 1, 7, -1, 0.5])
 print('Sorted list: ', sorted_array)
 reversed_array = bubble_sort([8, 2, 1, 7, -1, 0.5], reverse=True)
 print('Reversed array', reversed_array)
-
-
-sorted([4, 8, 2])

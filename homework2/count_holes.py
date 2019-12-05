@@ -1,6 +1,3 @@
-# count the number of holes
-
-
 def count_holes(input_num):
     try:
         input_num = str(input_num)
@@ -24,4 +21,3 @@ count_holes('001')
 count_holes(-8)
 count_holes(-8.0)
 count_holes('kkk')
-

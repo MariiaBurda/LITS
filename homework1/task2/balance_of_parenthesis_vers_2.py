@@ -1,12 +1,7 @@
-# check if parenthesis are balanced
-# solution from https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-python/
-# this solution for more complicated cases
-
-open_list = ["[", "{", "("]
-close_list = ["]", "}", ")"]
-
-
 def check_if_parenthesis_are_balanced(input_str):
+    open_list = ["[", "{", "("]
+    close_list = ["]", "}", ")"]
+
     stack = []
     for i in input_str:
         if i in open_list:
