@@ -9,7 +9,6 @@ def check_if_parenthesis_are_balanced(input_str):
     for symbol in input_str:
         if symbol == '(':
             count_open_signs += 1
-            continue
         elif symbol == ')':
             count_close_signs += 1
             if count_close_signs <= count_open_signs:

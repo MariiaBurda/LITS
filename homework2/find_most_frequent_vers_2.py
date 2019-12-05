@@ -1,9 +1,10 @@
 import re
 
 
-def find_most_frequent(text):
-    modify_text = text.lower()
+def find_most_frequent(input_text):
+    modify_text = input_text.lower()
     list_of_input_words = re.findall(r'\w+', modify_text)
+
     words_dict = {}
 
     for word in list_of_input_words:
@@ -22,6 +23,7 @@ def find_most_frequent(text):
             most_frequent_word.append(key)
 
     most_frequent_word.sort()
+
     print(most_frequent_word)
 
 
@@ -29,4 +31,3 @@ find_most_frequent('Hello,Hello, my dear!')
 find_most_frequent('to understand recursion you need first to understand recursion')
 find_most_frequent('Mom! Mom! Are you sleeping?!!!')
 find_most_frequent('my cat and I love fish my cat and I love fish my my cat my cat and I and and')
-

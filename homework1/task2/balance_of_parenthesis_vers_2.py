@@ -1,11 +1,9 @@
 # check if parenthesis are balanced
-# str = '((((((((((((((2, 3)))))))))))))'
 # solution from https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-python/
 # this solution for more complicated cases
 
 open_list = ["[", "{", "("]
 close_list = ["]", "}", ")"]
-# input_string = "[{}{})(]"
 
 
 def check_if_parenthesis_are_balanced(input_str):

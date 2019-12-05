@@ -1,5 +1,9 @@
+# count the number of holes
+
+
 def count_holes(input_num):
     try:
+        input_num = str(input_num)
         input_num = int(input_num)
         input_num = str(input_num).lstrip('0').lstrip('-')
         sum_of_numbers = 0
@@ -18,6 +22,6 @@ count_holes('123')
 count_holes(906)
 count_holes('001')
 count_holes(-8)
-count_holes('-8.0')
+count_holes(-8.0)
 count_holes('kkk')
 

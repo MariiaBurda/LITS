@@ -12,7 +12,7 @@ def val(c):
         return ord(c) - ord('A') + 10
 
 
-def toDeci(input_str, from_base):
+def to_deci(input_str, from_base):
     llen = len(input_str)
     power = 1
     input_num_in_decimal = 0
@@ -27,20 +27,20 @@ def toDeci(input_str, from_base):
     return input_num_in_decimal
 
 
-def reVal(num):
+def re_val(num):
     if num >= 0 and num <= 9:
         return chr(num + ord('0'))
     else:
         return chr(num - 10 + ord('A'))
 
 
-def fromDeci(to_base, input_num_in_decimal):
+def from_deci(to_base, input_num_in_decimal):
     res = ''
-    if input_num_in_decimal == False:
+    if not input_num_in_decimal:
         return False
     else:
         while input_num_in_decimal > 0:
-            res += reVal(input_num_in_decimal % to_base)
+            res += re_val(input_num_in_decimal % to_base)
             input_num_in_decimal = int(input_num_in_decimal / to_base)
 
         res = res[::-1]
@@ -61,10 +61,10 @@ def convert_n_to_m(x, n, m):
     if checking_res == 'False':
         print(checking_res)
     elif 1 <= n and m == 1:
-        res = '0' * toDeci(str(x), n)
+        res = '0' * to_deci(str(x), n)
         print(res)
     elif 1 <= n and m <= 36:
-        res = fromDeci(m, toDeci((str(x)), n))
+        res = from_deci(m, to_deci((str(x)), n))
         print(res)
     else:
         print('False')

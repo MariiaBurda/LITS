@@ -24,4 +24,3 @@ game1.compare_two_cards()
 
 game2 = CardGame()
 game2.compare_two_cards()
-
